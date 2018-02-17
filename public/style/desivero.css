@@ -1,0 +1,171 @@
+.desiveroNav {
+    background-color: #003399;
+    width: 100vw;
+    position: fixed;
+    height: 50px;
+}
+
+.footer {
+ /*   position: absolute;
+    bottom: 0;
+    width: 100%;
+    !* Set the fixed height of the footer here *!
+    height: 30px;
+    background-color: #f5f5f5;
+    z-index: 100;*/
+    position:fixed;
+
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    background:#999;
+    margin: 0px;
+    z-index: 100;
+}
+
+.marginLeft0 {
+    margin-left: 0px !important;
+}
+
+html, body, .container-fluid, .row {
+    height: 100%;
+}
+
+.sidebar {
+    background-color: #C2CCD3;
+    padding-top: 20px;
+}
+
+@media (min-width: 992px) {
+    .sidebar {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        display: block;
+        background-color: #003399;
+    }
+}
+
+.breadcrumb {
+    background-color: #E1E5E9;
+    margin-top: 50px;
+    width: 100vw;
+
+}
+
+.btnbreadcrumb {
+    background-color: transparent;
+    border: none;
+}
+
+.nomarginLeftRigth {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.custContainer {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100vw;
+}
+
+.backgrounDarkGray{
+    background-color: #CCCCCC;
+}
+
+.marginTop5{
+    margin-top: 5px;
+}
+.marginTop5:first-child{
+    margin-top: 3px;
+}
+
+.width100{
+    width: 100%;
+}
+
+.sidebarSection{
+    border-top: 1px solid black;
+}
+.sidebarSection:last-of-type {
+    border-bottom: 1px solid black;
+}
+.sidebarItem{
+    margin: 10px 0px 10px 0px;
+    text-align:left;
+}
+.sidebarBtn{
+    white-space: normal;
+    background-color: transparent;
+    border: transparent;
+    text-align: center;
+    width: 100%;
+    /*height: 50px;*/
+}
+
+.sidebarBtn:focus {
+    outline:0;
+}
+
+.desivero-header{
+    background-color: #FF5F5A;
+}
+
+.sidebarTitle{
+ height: 60px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;;
+}
+
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+
+    border-right:10px solid white;
+}
+
+
+#custBreadcrumb>.breadcrumb{
+    height: 38px;
+}
+
+hr.stylehr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+#fixedbutton {
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+}
+
+#fixedbuttonMob{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+.hidden-scrollbar {
+height: 70vh;
+    /*border:2px solid #666;*/
+    color:black;
+    overflow:hidden;
+
+}
+
+.hidden-scrollbar .inner {
+    height:inherit;
+    overflow:auto;
+    margin:15px -300px 15px 0px;
+    padding-right:300px; /* Samakan dengan besar margin negatif */
+}

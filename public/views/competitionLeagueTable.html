@@ -1,0 +1,95 @@
+<div class="">
+    <div class="row nomarginLeftRigth padding20  hidden-sm hidden-xs">
+        <div class="col-md-3 col-xs-5">
+            <div></div>
+        </div>
+        <div class="col-md-3 col-xs-7 centerText">
+            Totale
+        </div>
+        <div class="col-md-3 centerText">
+            Casa
+        </div>
+        <div class="col-md-3 centerText">
+            Fuori
+        </div>
+    </div>
+    <div class="row nomarginLeftRigth ">
+        <div class="col-md-3 col-xs-5">
+            <div>Team</div>
+        </div>
+        <div class="col-md-3 col-xs-7">
+            <div class="row nomarginLeftRigth">
+                <div class="col-md-2 col-xs-2 noPaddingLeft noPaddingRigh">P</div>
+                <div class="col-md-2 col-xs-2 noPaddingLeft noPaddingRigh">PG</div>
+                <div class="col-md-1 col-xs-2 noPaddingLeft noPaddingRigh">V</div>
+                <div class="col-md-1 col-xs-2 noPaddingLeft noPaddingRigh">D</div>
+                <div class="col-md-1 col-xs-2 noPaddingLeft noPaddingRigh">P</div>
+                <div class="col-md-2 col-xs-2 noPaddingLeft noPaddingRigh hidden-sm hidden-xs">GF</div>
+                <div class="col-md-2 col-xs-2 noPaddingLeft noPaddingRigh hidden-sm hidden-xs">GS</div>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-2 hidden-sm hidden-xs" >
+            <div class="row nomarginLeftRigth">
+                <div class="col-md-2 col-xs-2">PG</div>
+                <div class="col-md-2 col-xs-2">V</div>
+                <div class="col-md-2 col-xs-2">D</div>
+                <div class="col-md-2 col-xs-2">P</div>
+                <div class="col-md-2 col-xs-2">GF</div>
+                <div class="col-md-2 col-xs-2">GS</div>
+            </div>
+        </div>
+        <div class="col-md-3 col-xs-2 hidden-sm hidden-xs">
+            <div class="row nomarginLeftRigth">
+                <div class="col-md-2 col-xs-2">PG</div>
+                <div class="col-md-2 col-xs-2">V</div>
+                <div class="col-md-2 col-xs-2">D</div>
+                <div class="col-md-2 col-xs-2">P</div>
+                <div class="col-md-2 col-xs-2">GF</div>
+                <div class="col-md-2 col-xs-2">GS</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row nomarginLeftRigth ">
+        <div ng-repeat="clas in leagueTable.standing">
+            <div class="col-md-3 col-xs-5 visible-xs visible-sm">
+                <div>#{{$index+1}} {{clas.teamName  | limitTo:10}}</div>
+            </div>
+            <div class="col-md-3 col-xs-5 visible-md visible-lg ">
+                <div>#{{$index+1}} {{clas.teamName}}</div>
+            </div>
+            <div class="col-md-3 col-xs-7 h">
+                <div class="row nomarginLeftRigth">
+                    <div class="col-md-2 col-xs-2 noPaddingLeft noPaddingRigh">{{clas.points}}</div>
+                    <div class="col-md-1 col-xs-2 noPaddingLeft noPaddingRigh">{{clas.playedGames}}</div>
+                    <div class="col-md-1 col-xs-2 noPaddingLeft noPaddingRigh">{{clas.wins}}</div>
+                    <div class="col-md-1 col-xs-2 noPaddingLeft noPaddingRigh">{{clas.draws}}</div>
+                    <div class="col-md-2 col-xs-2 noPaddingLeft noPaddingRigh">{{clas.losses}}</div>
+                    <div class="col-md-2 col-xs-2 noPaddingLeft noPaddingRigh hidden-sm hidden-xs">{{clas.goals}}</div>
+                    <div class="col-md-2 col-xs-2 noPaddingLeft noPaddingRigh hidden-sm hidden-xs">{{clas.goalsAgainst}}</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-2 hidden-sm hidden-xs  noPaddingLeft noPaddingRigh">
+                <div class="row nomarginLeftRigth">
+                    <div class="col-md-2 col-xs-2">{{clas.home.wins+clas.home.draws+clas.home.losses}}</div>
+                    <div class="col-md-2 col-xs-2">{{clas.home.wins}}</div>
+                    <div class="col-md-2 col-xs-2">{{clas.home.draws}}</div>
+                    <div class="col-md-2 col-xs-2">{{clas.home.losses}}</div>
+                    <div class="col-md-2 col-xs-2">{{clas.home.goals}}</div>
+                    <div class="col-md-2 col-xs-2">{{clas.home.goalsAgainst}}</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-2 hidden-sm hidden-xs">
+                <div class="row nomarginLeftRigth">
+                    <div class="col-md-2 col-sm-3">{{clas.away.wins+clas.away.draws+clas.home.losses}}</div>
+                    <div class="col-md-2 col-sm-3 ">{{clas.away.wins}}</div>
+                    <div class="col-md-2 col-sm-3 ">{{clas.away.draws}}</div>
+                    <div class="col-md-2 col-xs-2 ">{{clas.away.losses}}</div>
+                    <div class="col-md-2 col-xs-2 ">{{clas.away.goals}}</div>
+                    <div class="col-md-2 col-xs-2 ">{{clas.away.goalsAgainst}}</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

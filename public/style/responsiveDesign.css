@@ -1,0 +1,84 @@
+@media only screen and (min-width : 320px) {
+    .titleGroup {
+        font-weight: bold ;
+        font-size: 16px;
+    }
+    .titleQuestion{
+        font-weight: normal;
+        font-size: 14px;
+    }
+    .DescQuestion{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width : 480px) {
+    .titleGroup {
+        font-weight: bold ;
+        font-size: 16px;
+    }
+    .titleQuestion{
+        /*font-weight: bold;*/
+        font-size: 14px;
+    }
+    .DescQuestion{
+        font-size: 10px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .titleGroup {
+        font-weight: bold ;
+        font-size: 16px;
+    }
+    .titleQuestion{
+        /*font-weight: bold;*/
+        font-size: 14px;
+    }
+    .DescQuestion{
+        font-size: 10px;
+    }
+
+    .modal-dialog{
+        width: 100vw;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .titleGroup {
+        font-weight: bold ;
+        font-size: 16px;
+    }
+    .titleQuestion{
+/*        font-weight: bold;*/
+        font-size: 18px;
+    }
+    .DescQuestion{
+        font-size: 14px;
+    }
+
+    .modal-dialog{
+        width: 100vw;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .titleGroup {
+        font-weight: bold ;
+        font-size: 16px;
+    }
+    .titleQuestion{
+/*        font-weight: bold;*/
+        font-size: 18px;
+    }
+    .DescQuestion{
+        font-size: 14px;
+    }
+
+    .modal-dialog{
+        width: 100vw;
+    }
+}

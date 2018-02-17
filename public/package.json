@@ -1,0 +1,64 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "6.10.2"
+  },
+  "scripts": {
+    "_heroku":      "https://www.angularonrails.com/deploy-rails-application-angular-cli-webpack-front-end/",
+    "start": "node index.js",
+    "e2e":          "protractor",
+    "preinstall":   "npm install -g http-server",
+    "postinstall":  "ng build --prod"
+
+  },
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-animate": "^1.6.1",
+    "angular-aria": "^1.6.1",
+    "angular-local-storage": "^0.5.0",
+    "angular-sanitize": "^1.6.4",
+    "angular-slick": "0.0.0",
+    "angular-social-links": "0.0.23",
+    "angular-socialshare": "^2.3.6",
+    "angular-spinner": "^0.8.1",
+    "angular-touch": "^1.6.1",
+    "angular-ui-bootstrap": "^2.3.1",
+    "angular-ui-router": "^0.3.2",
+    "angular-utils-ui-breadcrumbs": "^0.2.2-1",
+    "angularfire": "^2.3.0",
+    "angularjs-slider": "^6.1.1",
+    "angularjs-toaster": "^2.1.0",
+    "bootstrap": "^3.3.7",
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-header": "^1.2.2",
+    "gulp-inject": "^1.5.0",
+    "gulp-install": "^0.6.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-strip-debug": "^1.0.2",
+    "gulp-uglify": "^1.2.0",
+    "jquery": "^3.1.1",
+    "jshint-stylish": "^2.0.1",
+    "ngstorage": "^0.3.11",
+    "run-sequence": "^1.1.2",
+    "slick-carousel": "^1.6.0",
+    "yargs": "^3.17.1",
+    "ejs": "2.5.6",
+    "express": "4.15.2"
+
+  },
+  "devDependencies": {
+    "angular-translate": "^2.13.1",
+    "spin": "0.0.1"
+  }
+}

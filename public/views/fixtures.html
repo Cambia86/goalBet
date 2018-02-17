@@ -1,0 +1,11 @@
+<div style="background-color: #003399">
+    <div ng-repeat="fix in fixtureList.fixtures | filter: myFilter" class="marginTop5">
+        <div class="row shadowSquare background-white nomarginLeftRigth ">
+            <div style="margin:5px">
+                <div class="col-md-3 col-xs-5 col-md-offset-2 marginBottom5">{{fix.homeTeamName  | limitTo:20}}</div>
+                <div class="col-md-2 col-xs-2 marginBottom5">{{fix.result.goalsHomeTeam}} - {{fix.result.goalsAwayTeam}}</div>
+                <div class="col-md-3 col-xs-5 marginBottom5">{{fix.awayTeamName | limitTo:20}}</div>
+            </div>
+        </div>
+    </div>
+</div>

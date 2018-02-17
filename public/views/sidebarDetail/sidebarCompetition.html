@@ -1,0 +1,19 @@
+<div class="row nomarginLeftRigth">
+    <div class="col-md-12">
+        {{competition.caption}}
+    </div>
+</div>
+
+<div ng-repeat="comp in option" class="sidebarSection" >
+    <div class="row nomarginLeftRigth">
+        <div class="col-md-11 col-xs-12 noPaddingLeft noPaddingRigh" style="border-color: transparent;height: 25px">
+            <button ng-click="selectItem(comp)" class="sidebarBtn noPaddingRigh noPaddingLeft">
+                <div class="" >{{comp.caption}}</div>
+            </button>
+        </div>
+
+        <div ng-if="comp.selected==true" class="col-md-1 noPaddingLeft noPaddingRigh pull-right arrow-left" style="background-color: transparent ; height: inherit ; margin-top: 2px">
+
+        </div>
+    </div>
+</div>

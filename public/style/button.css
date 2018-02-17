@@ -1,0 +1,23 @@
+.btnGB {
+    background-color:#003399;
+    -moz-border-radius:28px;
+    -webkit-border-radius:28px;
+    border-radius:28px;
+    border:1px solid #19294a;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    padding:5px 31px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #191e29;
+    width: 100%;
+}
+.btnGB:hover {
+    background-color:#021b4f;
+}
+.btnGB:active {
+    position:relative;
+    top:1px;
+}

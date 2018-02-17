@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Goal Bet 2017</title>
+    <meta charset="utf-8"/>
+
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css"/>
+    <!--<link rel="stylesheet" href="lib/css/animate.min.css"/>-->
+    <link rel="stylesheet" href="style/desivero.css">
+    <link rel="stylesheet" href="style/responsiveDesign.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/button.css">
+
+
+    <script src="https://use.fontawesome.com/61c0d044e4.js"></script>
+    <link rel="stylesheet" href="script/slideout/dist/slideout.css">
+    https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js
+
+
+    <!--<link rel="stylesheet" href="script/material-design-hamburger.css">-->
+    <!--<link rel="stylesheet" href="style/navbar.css">-->
+
+
+</head>
+<body ng-app="myApp">
+<div class="container custContainer noPaddingLeft noPaddingRigh" style="width: inherit ">
+
+    <div class=" visible-xs visible-sm">
+        <nav id="menu">
+            <header>
+                <h2>Menu</h2>
+            </header>
+            <div class="col-md-2  noPaddingLeft noPaddingRigh sidebar backgrounDarkGray  visible-xs visible-sm height100">
+                <div ui-view="sidebar"></div>
+
+            </div>
+        </nav>
+
+        <main id="panel">
+            <div class="row nomarginLeftRigth">
+                <div class="col-md-2  noPaddingLeft noPaddingRigh sidebar backgrounDarkGray  hidden-xs hidden-sm">
+                    <div ui-view="sidebar"></div>
+
+                </div>
+                <div class="col-md-10 col-md-offset-2 noPaddingLeft noPaddingRigh">
+                    <div ui-view="main"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <custom-navbar></custom-navbar>
+    <!--<ui-breadcrumbs id="custBreadcrumb" displayname-property="data.displayName"  template-url="/app/directives/uiBreadcrumbs/uiBreadcrumbs.tpl.html"></ui-breadcrumbs>-->
+
+    <div class="row nomarginLeftRigth marginTop45">
+        <div class="col-md-2  noPaddingLeft noPaddingRigh sidebar backgrounDarkGray  hidden-xs hidden-sm">
+            <div ui-view="sidebar"></div>
+
+        </div>
+        <div class="col-md-10 col-md-offset-2 noPaddingLeft noPaddingRigh hidden-xs hidden-sm">
+            <div ui-view="main"></div>
+        </div>
+    </div>
+</div>
+<!--<div class="container" ui-view=""></div>-->
+
+
+<!--third part-->
+<!--<script type='text/javascript' src="lib/moment.min.js" charset="UTF-8"></script>
+<script type='text/javascript' src="lib/lodash.min.js" charset="UTF-8"></script>-->
+<script type='text/javascript' src="lib/angular.min.js" charset="UTF-8"></script>
+<!--<script type='text/javascript' src="lib/angular-sanitize/angular-sanitize.min.js" charset="UTF-8"></script>-->
+<script type='text/javascript' src="lib/angular-ui-router.min.js" charset="UTF-8"></script>
+<script type='text/javascript'
+        src="https://cdnjs.cloudflare.com/ajax/libs/angular-local-storage/0.5.2/angular-local-storage.min.js"
+        charset="UTF-8"></script>
+
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+<!--<script src="/lib/bootstrap.min.js"></script>-->
+<script src="/script/slideout/dist/slideout.min.js"></script>
+<script>
+    var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+    });
+
+    /* window.addEventListener("load",function() {
+     setTimeout(function(){
+     // This hides the address bar:
+     window.scrollTo(0, 1);
+     }, 0);
+     });*/
+</script>
+
+
+<!--controller-->
+<script src="app.js"></script>
+
+<!--service-->
+<script src="/service/data.service.js"></script>
+<script src="/service/ofootball.service.js"></script>
+<script src="/service/storageService.js"></script>
+
+<!--directive-->
+<script src="/directive/customNavbar.js"></script>
+
+
+<!--<script src="app/app.controller.js"></script>-->
+<script src="/controller/sidebarHomeCtrl.js"></script>
+<script src="/controller/CompetitionsCtrl.js"></script>
+<script src="/controller/resultsCtrl.js"></script>
+<script src="/controller/previsionCtrl.js"></script>
+<script src="/controller/sidebar/sidebarCompetitionController.js"></script>
+<script src="/controller/competitionDetailCtrl.js"></script>
+<script src="/controller/competitionLeagueTableCtrl.js"></script>
+<script src="/controller/fixturesCtrl.js"></script>
+
+
+</body>
+</html>
+ 
